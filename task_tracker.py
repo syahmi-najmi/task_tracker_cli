@@ -6,10 +6,10 @@ from datetime import datetime  # Handles timestamps
 
 # This function reads the JSON file and returns the tasks as a list.
 def read_tasks():
-    if os.path.exists("tasks.json"):
+    if os.path.exists("tasks.json"): #check if file exists
         with open("tasks.json", "r") as file:
-            return json.load(file)
-    return []
+            return json.load(file) # load tasks from JSON
+    return [] # return empty list if file doesn't exist
 
 # This function saves tasks back to the tasks.json file.
 def save_tasks(tasks):

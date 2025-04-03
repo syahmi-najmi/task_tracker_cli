@@ -1,7 +1,8 @@
-import argparse
-import json
-import os
-from datetime import datetime
+import argparse   # Handles command-line arguments
+import json       # Handles reading and writing JSON files
+import os         # Checks if the JSON file exists
+from datetime import datetime  # Handles timestamps
+
 
 # This function reads the JSON file and returns the tasks as a list.
 def read_tasks():
